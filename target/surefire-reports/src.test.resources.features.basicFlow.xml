@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/resources/features/basicFlow.feature" skipped="0" tests="1" time="14.799206">
+  <testcase classname="src.test.resources.features.basicFlow" name="Setup basic flow" time="14.799206">
+    <failure message="basicFlow.feature:6 - &#10;postComponent.feature:18 - status code was: 404, expected: 201, response time: 1944, url: http://dummy.restapiexample.com/api/v1/create/, response: {&quot;message&quot;:&quot;Error Occured! Page Not found, contact rstapi2example@gmail.com&quot;}">Given def postCall = call read('classpath:data/reusableComponent/postComponent.feature') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: basicFlow.feature:6 - 
+postComponent.feature:18 - status code was: 404, expected: 201, response time: 1944, url: http://dummy.restapiexample.com/api/v1/create/, response: {"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}&#13;
+	at ✽.Given def postCall = call read('classpath:data/reusableComponent/postComponent.feature') (basicFlow.feature:6)&#13;
+
+* def userId = postCall.response.id ....................................... skipped
+Then match postCall.name == name .......................................... skipped
+Then match postCall.salary == salary ...................................... skipped
+Then match postCall.age == age ............................................ skipped
+Given def putCall = call read('classpath:data/reusableComponent/putComponent.feature') . skipped
+Given def deleteCall = call read('classpath:data/reusableComponent/deleteComponent.feature') . skipped</failure>
+  </testcase>
+</testsuite>
