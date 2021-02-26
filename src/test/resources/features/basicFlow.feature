@@ -6,7 +6,7 @@ Feature: Setup Basic flow
     Given def postCall = call read('classpath:data/reusableComponent/postComponent.feature')
 
     * def userId = postCall.response.id
-
+    #comment for test
     Then match postCall.name == name
     Then match postCall.salary == salary
     Then match postCall.age == age
@@ -19,3 +19,4 @@ Feature: Setup Basic flow
 
     Examples:
     | read('classpath:data/csv/postInputData.csv') |
+
